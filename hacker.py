@@ -6,7 +6,7 @@ from array import *
 # The function is expected to return an INTEGER_ARRAY.
 # The function accepts following parameters:
 #  1. INTEGER d
-#  2. INTEGER_ARRAY arr
+#  2. INTEGER_ARRAY arr ram is awesome
 #
 
 def rotateLeft(d, arr):
