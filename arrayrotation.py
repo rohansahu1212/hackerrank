@@ -19,5 +19,8 @@ def rotateLeft(d, arr):
 if __name__ == "__main__":
     vals = array('i',[1,2,3,4,5])  
     print(rotateLeft(2,vals)) 
+<<<<<<< HEAD:hacker.py
     for i in range(2,5):
         print(i)
+=======
+>>>>>>> 90c4ac74a1a1f30d09260273f55f8e5a917c39a0:arrayrotation.py
