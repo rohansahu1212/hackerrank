@@ -52,22 +52,23 @@ Here are some examples to show how your function should work.
 [3, 4, 5, 1, 2]"""
 
 
-def primepartition(z):
-  li=[]
-  for x in range(2,z):
-    
-    ch=0
-    for i in range(2,x):
-      
-      if(x%i==0):
-        ch+=1
-    if(ch==0):
-      li=li+[x]
-  for i in li:
-    for j in li:
-      if(i+j==z):
+def isP(n):
+    if n==2:
         return True
-  else:
+    if n%2==0:
+        return False
+    return all(n%x>0 for x in range(3, int(n**0.5)+1, 2))
+ 
+def genP(n):
+    p = [2]
+    p.extend([x for x in range(3, n+1, 2) if isP(x)])
+    return p
+def primepartition(n):
+    p = genP(n)
+    for i in range(0,len(p)):
+        for j in range(0,len(p)):
+            if p[i]+p[j]==n:
+                return True
     return False
 def rotatelist(l,k):
   m=l[:]
