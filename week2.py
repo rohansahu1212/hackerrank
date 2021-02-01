@@ -32,6 +32,7 @@ False
 
 >>> matched("a)*(?")
 False
+""chill""
 
 >>> matched("((jkl)78(A)&l(8(dd(FJI:),):)?)")
 True
