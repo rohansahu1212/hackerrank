@@ -19,3 +19,5 @@ def rotateLeft(d, arr):
 if __name__ == "__main__":
     vals = array('i',[1,2,3,4,5])  
     print(rotateLeft(2,vals)) 
+    for i in range(2,5):
+        print(i)
